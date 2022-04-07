@@ -2,7 +2,7 @@
 
 .container {
   width: 70%;
-  margin: auto;
+  margin:  2em auto;
   text-align: center;
 }
 
@@ -10,7 +10,7 @@
   margin: 0 auto;
   text-align: center;
   display: inline-block;
-padding-top: 0;
+  margin-top: 3em;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-  margin: 5px;
+  margin: 5px auto 1em;
   font-family: 'Rubik Moonrocks', cursive;
   text-shadow: 5px 0 #232931;
   font-size: 5rem;
@@ -63,4 +63,14 @@ footer {
 .btn button:hover{
   background-color: #4ECCA3;
   box-shadow: #b16263 3px 3px 3px 3px;
+}
+.left{
+  border-right: #4ECCA3 solid 2px;
+}
+.right{
+  border-left: #4ECCA3 solid 2px;
+
+}
+.dice p{
+  margin-top: 0;
 }
