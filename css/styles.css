@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
 .container {
   width: 70%;
   margin: auto;
@@ -19,9 +20,9 @@ body {
 
 h1 {
   margin: 5px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Rubik Moonrocks', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 7rem;
+  font-size: 5rem;
   color: #4ECCA3;
 }
 h6 {
@@ -46,4 +47,20 @@ footer {
   font-family: 'Sawarabi Mincho', serif;
   font-size: 1.5rem;
 
+}
+.btn button{
+  border: solid 0 #9C060C;
+  padding:  1em;
+  background-color: #9C060C;
+  color: #fff ;
+  font-size: 1.2rem;
+  font-weight: 900;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: #4ECCA3 3px 3px 3px 3px;
+}
+
+.btn button:hover{
+  background-color: #4ECCA3;
+  box-shadow: #b16263 3px 3px 3px 3px;
 }
