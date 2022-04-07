@@ -1,36 +1,41 @@
 
-alert ("Welcome to TonniPaul's Dice game, all you need do is to refresh the page  and the player with the highest figure on his/her dice wins")
-document.querySelector("h6").style.visibility="hidden";
+function getRandomNumber(){
+    return Math.floor(Math.random ()* 6)+1;
+
+}
+
+function getRandomImageSource(number){
+    const randomDiceImage = "dice" + number + ".png";
+    return "images/" + randomDiceImage;
+}
 // Image 1
 
-var randomNumber1= Math.floor(Math.random ()* 6)+1;
+function getWinner(){
 
-var randomDiceImage = "dice" + randomNumber1 + ".png";
+    document.querySelector("h6").hidden = true;
+    const randomNumber1 = getRandomNumber();
+    const randomNumber2 = getRandomNumber();
 
-var randomImageSource = "images/" + randomDiceImage;
+    const image1 = document.querySelectorAll("img")[0];
+    image1.setAttribute("src", getRandomImageSource(randomNumber1));
+    const image2 = document.querySelectorAll("img")[1];
+    image2.setAttribute("src", getRandomImageSource(randomNumber2));
 
-var image1 = document.querySelectorAll("img")[0];
-
-image1.setAttribute("src", randomImageSource);
-
-// imege 2
-
-var randomNumber2 = Math.floor(Math.random() * 6) + 1;
-
-var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
-
-var image2 = document.querySelectorAll("img")[1];
-
-image2.setAttribute("src", randomImageSource2);
-
-if (randomNumber1 > randomNumber2){
-    document.querySelector("h1").innerHTML="Player 1 wins";
+    if (randomNumber1 > randomNumber2){
+        document.querySelector("h1").innerHTML="Player 1 wins";
+    }
+    else if (randomNumber2 > randomNumber1) {
+        document.querySelector("h1").innerHTML="Player 2 Wins";
+    }
+    else{
+        document.querySelector("h1").innerHTML="Try Again";
+        document.querySelector("h6").hidden = false;
+    }
 }
-else if (randomNumber2 > randomNumber1) {
-    document.querySelector("h1").innerHTML="Player 2 Wins";
-}
-else{
-    document.querySelector("h6").style.visibility="visible";
-}
+
+
+
+
+
 
 
