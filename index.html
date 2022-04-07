@@ -5,14 +5,17 @@
     <title>Dicee</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
-    
 
   </head>
   <body>
 
     <div class="container">
-      <h1>Refresh Me</h1>
-      <h6>It's a tie</h6>
+      <h1>TonniPaul Dice </h1>
+      <h6 hidden id="result">it's a tie</h6>
+
+      <div class="btn">
+        <button onclick="getWinner()" type="menu"> Click to refresh </button>
+      </div>
 
       <div class="dice">
         <p>Player 1</p>
@@ -24,14 +27,15 @@
         <img class="img2" src="images/dice6.png">
       </div>
 
-
     </div>
 
+    <footer>
+      www.tonnipaul.live
+    </footer>
+    <script src="scripts/index.js"></script>
 
   </body>
-  <script src="scripts/index.js"></script>
+  
 
-  <footer>
-    www.tonnipaul.live
-  </footer>
+
 </html>
