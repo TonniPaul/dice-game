@@ -1,23 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
-
+body {
+  background-color: #E6D2AA;
+  font-family: 'Sawarabi Mincho', serif;
+}
 .container {
   width: 70%;
   margin:  2em auto;
   text-align: center;
 }
-
 .dice {
   margin: 0 auto;
   text-align: center;
   display: inline-block;
   margin-top: 3em;
 }
-
-body {
-  background-color: #E6D2AA;
-  font-family: 'Sawarabi Mincho', serif;
-}
-
 h1 {
   margin: 5px auto 1em;
   font-family: 'Rubik Moonrocks', cursive;
@@ -42,11 +38,13 @@ img {
 
 footer {
   margin-top: 4%;
-  color: #95060B;
   text-align: center;
   font-family: 'Sawarabi Mincho', serif;
   font-size: 1.5rem;
-
+}
+footer > a{
+  color: #95060B;
+  text-decoration: none;
 }
 .btn button{
   border: solid 0 #9C060C;
@@ -69,7 +67,6 @@ footer {
 }
 .right{
   border-left: #4ECCA3 solid 2px;
-
 }
 .dice p{
   margin-top: 0;
